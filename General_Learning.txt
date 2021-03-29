@@ -7,14 +7,12 @@ Declare
   vector<int> c (b.begin(),b.end());  // iterating through second
   vector<int> d (c);  // copy of c
   
- 
 v.begin()
 v.end()  // can be use in loops
 
 A simple traversal using iterators
 
 Traverse:
-
 void traverse(vector<int> v)
 {
     vector <int>::iterator it;
@@ -24,8 +22,7 @@ void traverse(vector<int> v)
     for(int i = 0;i < v.size();++i)
         cout << v[i] << ‘ ‘;
     cout << endl;
- }
-
+}
 
 Member functions in vector are
 
@@ -38,16 +35,19 @@ empty(): Returns a boolean value, true if the vector is empty and false if the v
 end(): Returns an iterator pointing to a position which is next to the last element of the vector. Its time complexity is O(1).
 erase(): Deletes a single element or a range of elements. Its time complexity is O(N + M) where N is the number of the elements erased and M is the number of the elements moved.
 front(): Returns the reference to the first element. Its time complexity is O(1).
-insert(): Inserts new elements into the vector at a particular position. ts time complexity is O(N + M) where N is the number of elements inserted and M is the number of the elements moved .
+insert(): Inserts new elements into the vector at a particular position. Its time complexity is O(N + M) where N is the number of elements inserted and M is the number of the elements moved .
 pop_back(): Removes the last element from the vector. Its time complexity is O(1).
 push_back(): Inserts a new element at the end of the vector. Its time complexity is O(1).
 resize(): Resizes the vector to the new length which can be less than or greater than the current length. Its time complexity is O(N) where N is the size of the resized vector.
 size(): Returns the number of elements in the vector. Its time complexity is O(1).
 
-
 Sorting a vector--
-  sort(v.begin(), v.end())
+  sort (v.begin(), v.end())
   sort (v.begin(), v.end(), greater<int>()) // To sort in descending order.
+  
+Sorting an array--
+  sort (arr, arr+n)
+  sort (arr, arr+n, greater<int>()) // To sort in descending order.
 
 Calculating power
   in C math.h required
